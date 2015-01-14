@@ -66,24 +66,31 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="DevExpress.CodeRush.Extensions, Version=11.1.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.CodeRush.UserControls, Version=11.1.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=11.1.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DXCore.Controls.XtraBars.v6.3, Version=11.1.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=11.1.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DXCore.Controls.XtraTreeList.v6.3, Version=11.1.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DXCore.Platform, Version=11.1.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -102,12 +109,24 @@
     <Reference Include="System.Xml" />
     <Reference Include="EnvDTE" />
     <Reference Include="EnvDTE80" />
-    <Reference Include="DevExpress.CodeRush.Common" />
-    <Reference Include="DevExpress.CodeRush.Core" />
-    <Reference Include="DevExpress.CodeRush.PlugInCore" />
-    <Reference Include="DevExpress.CodeRush.StructuralParser" />
-    <Reference Include="DevExpress.DXCore.Parser" />
-    <Reference Include="DevExpress.CodeRush.VSCore" />
+    <Reference Include="DevExpress.CodeRush.Common">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.PlugInCore">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.StructuralParser">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Parser">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.VSCore">
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CR_EasierIdentiersExtension.cs" />
@@ -159,6 +178,11 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CR-Plug-in.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
